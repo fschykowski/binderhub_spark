@@ -5,4 +5,3 @@ jupyter-server-proxy
 #vscode
 numpy
 jupyter-vscode-proxy
-pyspark==3.0.1
