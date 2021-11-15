@@ -58,8 +58,9 @@ tar xvf spark-3.2.0-bin-hadoop3.2.tgz
 mkdir .spark
 mv spark-3.2.0-bin-hadoop3.2/ .spark
 
-echo "export SPARK_HOME=~/.spark" >> ~/.bashrc
-echo "export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin" >> ~/.bashrc
+export SPARK_HOME=/home/jovyan/.spark/
+echo "export SPARK_HOME=~/.spark/" >> ~/.bashrc
+echo "export PATH=\$PATH:\$SPARK_HOME/bin:\$SPARK_HOME/sbin" >> ~/.bashrc
 echo "alias spark-submit='. $SPARK_HOME/bin/spark-submit'" >> ~/.bashrc
 echo "alias spark-shell='. $SPARK_HOME/bin/spark-shell'" >> ~/.bashrc
 
