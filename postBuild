@@ -64,7 +64,7 @@ export SPARK_HOME=/home/jovyan/.spark/
 echo "export SPARK_VERSION=spark-3.2.0-bin-hadoop3.2" >> ~/.bashrc
 echo "export SPARK_HOME=/home/jovyan/.spark/" >> ~/.bashrc
 echo "export PATH=\$PATH:\${SPARK_HOME}bin:\${SPARK_HOME}sbin" >> ~/.bashrc
-echo "alias spark-submit='. ${SPARK_HOME}${SPARK_VERSION}/bin/spark-submit'" >> ~/.bashrc
-echo "alias spark-shell='. ${SPARK_HOME}${SPARK_VERSION}/bin/spark-shell'" >> ~/.bashrc
+echo "alias spark-submit='. \${SPARK_HOME}\${SPARK_VERSION}/bin/spark-submit'" >> ~/.bashrc
+echo "alias spark-shell='. \${SPARK_HOME}\${SPARK_VERSION}/bin/spark-shell'" >> ~/.bashrc
 
 source /etc/environment
